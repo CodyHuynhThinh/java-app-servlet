@@ -1,0 +1,18 @@
+
+Jun 14, 2022 14:56:48.74 NEW SESSION
+Jun 14, 2022 14:56:48.74 [14716:12676:0614/145648.742:ERROR:device_event_log_impl.cc(214)] [14:56:48.742] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 14, 2022 14:56:48.74 [14716:12676:0614/145648.743:ERROR:device_event_log_impl.cc(214)] [14:56:48.743] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 14, 2022 14:57:45.67 [14716:7612:0614/145745.671:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jun 14, 2022 15:37:22.31 [14716:12676:0614/153722.315:ERROR:interface_endpoint_client.cc(665)] Message 1 rejected by interface blink.mojom.WidgetHost
+Jun 14, 2022 16:02:57.68 [14716:12676:0614/160257.683:ERROR:interface_endpoint_client.cc(665)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+Jun 20, 2022 10:10:18.91 NEW SESSION
+Jun 20, 2022 10:10:18.91 [19032:15484:0620/101018.904:ERROR:device_event_log_impl.cc(214)] [10:10:18.903] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 20, 2022 10:10:18.91 [19032:15484:0620/101018.904:ERROR:device_event_log_impl.cc(214)] [10:10:18.904] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 20, 2022 10:11:15.78 [19032:21064:0620/101115.784:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+
+Jun 21, 2022 13:35:11.56 NEW SESSION
+Jun 21, 2022 13:35:11.56 [9956:3460:0621/133511.566:ERROR:device_event_log_impl.cc(214)] [13:35:11.567] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 21, 2022 13:35:11.56 [9956:3460:0621/133511.567:ERROR:device_event_log_impl.cc(214)] [13:35:11.567] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jun 21, 2022 13:36:09.40 [9956:11028:0621/133609.403:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
+Jun 21, 2022 15:33:35.74 [9956:3460:0621/153335.707:ERROR:interface_endpoint_client.cc(665)] Message 1 rejected by interface blink.mojom.WidgetHost

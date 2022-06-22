@@ -1,0 +1,30 @@
+package com.java.app.dao.impl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.java.app.dao.ICategoryDAO;
+import com.java.app.model.CategoryModel;
+
+public class CategoryDAO implements ICategoryDAO {
+
+	public Connection getConnection() {
+		String url = "";
+		String user = "";
+		String password = "";
+		
+		try {
+			return DriverManager.getConnection(url, user, password);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	public List<CategoryModel> findAll() {
+		
+		return null;
+	}
+	
+}

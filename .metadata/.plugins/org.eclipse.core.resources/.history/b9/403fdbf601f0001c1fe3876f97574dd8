@@ -1,0 +1,5 @@
+package com.java.app.service.impl;
+
+public class NewService implements INewService{
+
+}

@@ -1,0 +1,10 @@
+package com.java.app.model;
+
+import java.util.Date;
+
+public abstract class AbtractModel {
+	private String createUser;
+	private Date createDate;
+	private String modifiedUser;
+	private Date modifiedDate;
+}

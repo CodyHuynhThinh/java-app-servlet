@@ -1,0 +1,18 @@
+package com.java.app.mapper;
+
+import java.sql.ResultSet;
+
+import com.java.app.model.CategoryModel;
+
+public class CategoryMapper implements RowMapper<CategoryModel> {
+
+	@Override
+	public CategoryModel MapRow(ResultSet rs) {
+		CategoryModel categoryModel = new CategoryModel();
+		categoryModel.setId(result.getInt("id"));
+		categoryModel.setCategoryName(result.getString("name"));
+		listCate.add(categoryModel);
+		return categoryModel;
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.java.app.dao.impl;
+
+import java.util.List;
+
+import com.java.app.dao.ICategoryDAO;
+import com.java.app.model.CategoryModel;
+
+public class CategoryDAO implements ICategoryDAO {
+
+	public List<CategoryModel> findAll() {
+		
+		return null;
+	}
+	
+}

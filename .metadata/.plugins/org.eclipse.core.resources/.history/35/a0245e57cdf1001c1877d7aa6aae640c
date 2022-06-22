@@ -1,0 +1,5 @@
+package com.java.app.mapper;
+
+public interface RowMapper<T> {
+	T MapRow();
+}

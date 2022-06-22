@@ -1,0 +1,14 @@
+package com.java.app.model;
+
+public class CategoryModel extends AbtractModel {
+	private String categoryName;
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+	
+}

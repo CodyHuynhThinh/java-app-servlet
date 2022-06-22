@@ -1,0 +1,6 @@
+package com.java.app.model;
+
+public abstract class AbtractModel {
+	private String createUser;
+	private Datetime createDate;
+}

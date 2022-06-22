@@ -1,0 +1,11 @@
+package com.java.app.dao;
+
+import java.util.List;
+
+import com.java.app.mapper.RowMapper;
+
+public interface GenericDAO<T> {
+	
+	<T> List<T> query(String sql, RowMapper<T>, Object... parameters);
+
+}

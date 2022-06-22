@@ -1,0 +1,15 @@
+package com.java.app.service.impl;
+
+import java.util.List;
+
+import com.java.app.model.CategoryModel;
+import com.java.app.service.ICategoryService;
+
+public class CategoryService implements ICategoryService {
+
+	@Override
+	public List<CategoryModel> findAll() {
+		return null;
+	}
+	
+}

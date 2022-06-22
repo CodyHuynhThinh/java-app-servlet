@@ -1,0 +1,5 @@
+package com.java.app.dao;
+
+public interface ICategoryDAO {
+	List<CategoryModel> findAll();
+}

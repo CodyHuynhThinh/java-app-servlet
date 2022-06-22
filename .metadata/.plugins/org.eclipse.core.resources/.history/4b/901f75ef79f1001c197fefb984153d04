@@ -1,0 +1,64 @@
+package com.java.app.dao.impl;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.app.dao.ICategoryDAO;
+import com.java.app.model.CategoryModel;
+
+public class CategoryDAO implements ICategoryDAO {
+
+	public Connection getConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/java_app";
+			String user = "root";
+			String password = "123456";
+		
+			return DriverManager.getConnection(url, user, password);
+		} catch (ClassNotFoundException | SQLException e) {
+			return null;
+		}
+	}
+	
+	
+	public List<CategoryModel> findAll() {
+		List<CategoryModel> listCate = new ArrayList<CategoryModel>();
+		Connection conn = getConnection();
+		PreparedStatement pstmt = null;
+		ResultSet result = null;
+		CategoryModel categoryModel;
+		try {
+			String strSql = "SELECT * FROM category";
+			pstmt = conn.prepareStatement(strSql);
+			result = pstmt.executeQuery();
+			while(result.next()) {
+				categoryModel = new CategoryModel();
+				categoryModel.setId(result.getInt("id"));
+				categoryModel.setCategoryName(result.getString("name"));
+				listCate.add(categoryModel);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if(conn != null) {
+					conn.close();
+				}
+				
+				if (pstmt != null) {
+					conn.close();
+				}
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return listCate;
+	}
+	
+}

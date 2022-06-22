@@ -1,0 +1,11 @@
+package com.java.app.model;
+
+public class NewsModel extends AbstractModel {
+
+	private String title;
+	private String thumnail;
+	private String shortDescription;
+	private String content;
+	private long categoryID;
+	
+}

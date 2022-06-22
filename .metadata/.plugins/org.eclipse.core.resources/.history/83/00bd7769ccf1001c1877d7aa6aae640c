@@ -1,0 +1,7 @@
+package com.java.app.dao;
+
+public interface GenericDAO<T> {
+	
+	<T> List<T>
+
+}

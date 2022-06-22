@@ -1,0 +1,29 @@
+package com.java.app.dao.impl;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.app.dao.ICategoryDAO;
+import com.java.app.model.CategoryModel;
+
+public class CategoryDAO extends AbstractDAO<T> implements ICategoryDAO {
+
+	public Connection getConnection() {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			String url = "jdbc:mysql://localhost:3306/java_app";
+			String user = "root";
+			String password = "123456";
+		
+			return DriverManager.getConnection(url, user, password);
+		} catch (ClassNotFoundException | SQLException e) {
+			return null;
+		}
+	}
+
+	@Override
+	public List<CategoryModel> findAll() {
+		String strSql = "SELECT * FROM category";
+	}
+}

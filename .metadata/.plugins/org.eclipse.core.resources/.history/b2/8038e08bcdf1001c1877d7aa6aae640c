@@ -1,0 +1,7 @@
+package com.java.app.mapper;
+
+import com.java.app.model.CategoryModel;
+
+public class CategoryMapper implements RowMapper<CategoryModel> {
+
+}

@@ -1,0 +1,9 @@
+package com.java.app.model;
+
+public class CommentModel extends AbstractModel {
+
+	private int newsID;
+	private int userID;
+	private String content;
+	
+}

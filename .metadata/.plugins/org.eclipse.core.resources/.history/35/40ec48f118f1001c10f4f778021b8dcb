@@ -1,0 +1,47 @@
+package com.java.app.dao.impl;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.java.app.dao.ICategoryDAO;
+import com.java.app.model.CategoryModel;
+
+public class CategoryDAO implements ICategoryDAO {
+
+	public Connection getConnection() {
+		String url = "jdbc:mysql://localhost:3306/java_app";
+		String user = "root";
+		String password = "123456";
+		
+		try {
+			return DriverManager.getConnection(url, user, password);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	
+	public List<CategoryModel> findAll() {
+		List<CategoryModel> listCate = new ArrayList();
+		Connection conn = getConnection();
+		PreparedStatement pstmt = null;
+		ResultSet result = null;
+		
+		try {
+			String strSql = "SELECT * FROM category";
+			pstmt = conn.prepareStatement(strSql);
+			result = pstmt.executeQuery();
+			while(result.next()) {
+				
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return listCate;
+	}
+	
+}

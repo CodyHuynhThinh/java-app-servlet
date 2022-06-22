@@ -1,0 +1,19 @@
+package com.java.app.dao.impl;
+
+import java.sql.Connection;
+import java.util.List;
+
+import com.java.app.dao.ICategoryDAO;
+import com.java.app.model.CategoryModel;
+
+public class CategoryDAO implements ICategoryDAO {
+
+	public Connection getConnection() {
+		return Connection
+	}
+	public List<CategoryModel> findAll() {
+		
+		return null;
+	}
+	
+}
